@@ -58,6 +58,12 @@ public class MainActivity extends Activity {
         Button pressed_button = (Button) view;
         String button_text = pressed_button.getText().toString();
 
+        if(button_text.equals("C")) {
+            set_text("0");
+            text_history.clear();
+            return;
+        }
+
         if (button_text.equals("=")) {
             calculate();
             return;
@@ -87,7 +93,13 @@ public class MainActivity extends Activity {
     }
 
     private void calculate() {
-
+        //String current_text = text_history.get(text_history.size()-1);
+        String current_text = input_output_field.getText().toString();
+        if(has_operators(current_text)) {
+            InfixPostfixEvaluator infixPostfixEvaluator = new InfixPostfixEvaluator();
+            double result = infixPostfixEvaluator.evalInfix(current_text);
+            set_text(Double.toString(result));
+        }
     }
 
     private void undo() {
@@ -116,5 +128,14 @@ public class MainActivity extends Activity {
     private void set_text(String text) {
         text_history.add(text);
         input_output_field.setText(text);
+    }
+
+    private boolean has_operators(String input) {
+        return (
+                input.contains("+") ||
+                input.contains("-") ||
+                input.contains("*") ||
+                input.contains("/")
+        );
     }
 }
