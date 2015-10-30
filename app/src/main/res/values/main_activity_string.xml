@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="number_0_button_text">0</string>
+    <string name="number_1_button_text">1</string>
+    <string name="number_2_button_text">2</string>
+    <string name="number_3_button_text">3</string>
+    <string name="number_4_button_text">4</string>
+    <string name="number_5_button_text">5</string>
+    <string name="number_6_button_text">6</string>
+    <string name="number_7_button_text">7</string>
+    <string name="number_8_button_text">8</string>
+    <string name="number_9_button_text">9</string>
+
+    <string name="number_plus_button_text">+</string>
+    <string name="number_minus_button_text">-</string>
+    <string name="number_multiply_button_text">*</string>
+    <string name="number_divide_button_text">/</string>
+
+    <string name="number_equals_button_text">=</string>
+</resources>
