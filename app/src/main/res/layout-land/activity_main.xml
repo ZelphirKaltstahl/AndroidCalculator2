@@ -21,7 +21,7 @@
             android:textAlignment="textEnd"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/input_output_edit_text"
+            android:id="@+id/editText"
             android:text="@string/input_and_output_textfield_text"
             android:layout_span="6"/>
     </TableRow>

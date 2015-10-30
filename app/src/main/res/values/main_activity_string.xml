@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="number_clear_button_text">C</string>
+    <string name="number_undo_button_text">&lt;</string>
+
     <string name="number_0_button_text">0</string>
     <string name="number_1_button_text">1</string>
     <string name="number_2_button_text">2</string>
@@ -11,12 +14,18 @@
     <string name="number_8_button_text">8</string>
     <string name="number_9_button_text">9</string>
 
-    <string name="number_plus_button_text">+</string>
-    <string name="number_minus_button_text">-</string>
-    <string name="number_multiply_button_text">*</string>
-    <string name="number_divide_button_text">/</string>
+    <string name="dot_button_text">.</string>
 
-    <string name="number_equals_button_text">=</string>
+    <string name="plus_button_text">+</string>
+    <string name="minus_button_text">-</string>
+    <string name="multiply_button_text">*</string>
+    <string name="divide_button_text">/</string>
+    <string name="open_bracket_button_text">(</string>
+    <string name="close_bracket_button_text">)</string>
+    <string name="exp_button_text">x^y</string>
+    <string name="radic_button_text">√</string>
 
-    <string name="input_and_output_textfield">0</string>
+    <string name="equals_button_text">=</string>
+
+    <string name="input_and_output_textfield_text">0</string>
 </resources>
