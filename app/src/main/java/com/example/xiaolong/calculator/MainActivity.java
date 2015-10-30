@@ -104,17 +104,13 @@ public class MainActivity extends Activity {
     }
 
     private void add_dot() {
+        String current_text;
         if(!text_history.isEmpty()) {
-            String current_text = text_history.get(text_history.size() - 1);
-            if (current_text.contains(".")) {
-                Toast.makeText(
-                        getApplicationContext(), "Decimals may contain only one dot.", Toast.LENGTH_SHORT
-                ).show();
-                return;
-            }
+            current_text = text_history.get(text_history.size()-1) + ".";
         } else {
-            set_text("0.");
+            current_text = "0.";
         }
+        set_text(current_text);
     }
 
     private void set_text(String text) {
