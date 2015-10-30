@@ -17,4 +17,6 @@
     <string name="number_divide_button_text">/</string>
 
     <string name="number_equals_button_text">=</string>
+
+    <string name="input_and_output_textfield">0</string>
 </resources>
